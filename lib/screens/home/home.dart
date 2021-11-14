@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
       drawer: AppDrawer(),
       body: Center(
         child: Center(
-          child: Text('Home'),
+          child: Text('ようこそ'),
         ),
       ),
     );
