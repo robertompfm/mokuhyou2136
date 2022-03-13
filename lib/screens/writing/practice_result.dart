@@ -73,6 +73,7 @@ class _PracticeResultState extends State<PracticeResult> {
                       kanji.kanji,
                       style: TextStyle(
                         fontSize: 66,
+                        fontFamily: 'KleeOne',
                       ),
                     ),
                     Text(""),

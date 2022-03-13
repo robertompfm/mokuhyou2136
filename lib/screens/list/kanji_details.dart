@@ -16,7 +16,7 @@ class KanjiDetails extends StatelessWidget {
         leading: BackButton(
           onPressed: () => Navigator.pop(context),
         ),
-        title: Text("Kanji detail"),
+        title: Text("Kanji info"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(15),
@@ -31,6 +31,7 @@ class KanjiDetails extends StatelessWidget {
                     kanjiStore.selectedKanji.kanji,
                     style: TextStyle(
                       fontSize: 88,
+                      fontFamily: 'KleeOne',
                     ),
                   ),
                 ),
@@ -43,11 +44,11 @@ class KanjiDetails extends StatelessWidget {
                   value: kanjiStore.selectedKanji.strokes.toString(),
                 ),
                 InfoRow(
-                  label: "Frequency:",
+                  label: "Frequency rank:",
                   value: kanjiStore.selectedKanji.freq.toString(),
                 ),
                 InfoRow(
-                  label: "JLPT Level:",
+                  label: "JLPT level:",
                   value: kanjiStore.selectedKanji.jlptNew.toString(),
                 ),
               ],

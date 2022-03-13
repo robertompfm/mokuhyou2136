@@ -38,6 +38,7 @@ class _KanjiCardState extends State<KanjiCard> {
                 widget.kanji.kanji,
                 style: TextStyle(
                   fontSize: 26,
+                  fontFamily: 'KleeOne',
                 ),
               ),
             ],
